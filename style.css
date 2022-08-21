@@ -1,0 +1,32 @@
+body{
+    background-color: aqua;
+    color: aliceblue;
+}
+
+img{
+    position: relative;
+    bottom:60px
+}
+
+h5{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 30px;
+    position: relative;
+    bottom:120px
+}
+h2{
+    font-size: 30px;
+    position: relative;
+    bottom:120px
+}
+div{
+    text-align: center;
+}
+
+span{
+    position: relative;
+    bottom:80px
+}

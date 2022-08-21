@@ -30,7 +30,7 @@ function getFetch(){
       document.querySelector("h5").innerText = newDay
       document.querySelector("h3").innerText=`Description: ${data.weather[0].main}`
       
-      document.querySelector("h2").innerText= `Current Temperature: ${data.main.feels_like} F`
+      document.querySelector("h2").innerText= `Temp: ${Math.round (data.main.feels_like)} °F`
 
      
       })
