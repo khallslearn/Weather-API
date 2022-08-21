@@ -5,6 +5,15 @@
 
 document.querySelector('button').addEventListener('click', getFetch)
 
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+let week = days[currentTime.getDay()]
+let newDay = `It is ${week} ${month}/${day}/${year}`
+
 function getFetch(){
   const choice = document.querySelector('input').value.toLowerCase()
 
@@ -18,9 +27,10 @@ function getFetch(){
         console.log(data)
       document.querySelector("h1").innerHTML=`Current ${data.name} Weather`;
       document.querySelector("img").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
-      document.querySelector("h3").innerText=data.weather[0].description
+      document.querySelector("h5").innerText = newDay
+      document.querySelector("h3").innerText=`Description: ${data.weather[0].main}`
       
-      document.querySelector("h2").innerText= `${data.main.feels_like} F`
+      document.querySelector("h2").innerText= `Current Temperature: ${data.main.feels_like} F`
 
      
       })
