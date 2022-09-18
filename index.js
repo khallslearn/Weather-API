@@ -1,7 +1,4 @@
-//require('dotenv').config({ debug: true })
 
-
-//console.log(process.env.S3_BUCKET) 
 
 document.querySelector('button').addEventListener('click', getFetch)
 
