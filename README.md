@@ -4,8 +4,9 @@ This is an Weather application. Enter city and it will show weather information 
 
 <img src="https://i.ibb.co/zXL93zc/weather-app.png" alt="weather-app" border="0">
 
-Live Demo:
+Live Demo:https://khallslearn.github.io/Weather-API/
+
 ## How It's Made:
-https://khallslearn.github.io/Weather-API/
+
 **Tech used:** HTML, CSS, JavaScript
 
